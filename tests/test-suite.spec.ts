@@ -13,13 +13,13 @@ import { EventEmitterStream } from "../src/eventemitter-stream.js";
 import { EventStreamNoOp } from "../src/noop-stream.js";
 
 describe('EventEmitterStream', () => {
-  TestSuite.runStoreDependentTests({
+  TestSuite.runInjectableDependentTests({
     eventStream: new EventEmitterStream()
   });
 });
 
 describe('EventStreamNoOp', () => {
-  TestSuite.runStoreDependentTests({
+  TestSuite.runInjectableDependentTests({
     eventStream: new EventStreamNoOp()
   });
 });
